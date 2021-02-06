@@ -204,6 +204,7 @@ button:hover {
 }
 header {
 	display: flex;
+  flex-direction: row;
 	justify-content: space-around;
 	padding: 0.5rem 0;
 	flex: 33.3%;
@@ -364,5 +365,11 @@ li:hover {
 		transform: rotate(-360deg);
 		-webkit-transform: rotate(-360deg);
 	}
+}
+@media(max-width:768px){
+  header{
+    flex-direction: column;
+    flex: 1;
+  }
 }
 </style>
